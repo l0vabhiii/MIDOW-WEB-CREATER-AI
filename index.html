@@ -3,38 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MIDOW WEB CREATER AI</title>
+  <title>MIDOWWEBCREATER - Client Outreach</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <div class="logo">MIDOW</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
+    <h1>MIDOW Outreach Assistant</h1>
+    <label>Select Country:</label>
+    <select id="countrySelect"></select>
 
-  <section class="hero">
-    <h1>We Build <span>Websites, Designs & AI Tools</span></h1>
-    <p>Professional, Affordable & Fast – Everything Your Brand Needs.</p>
-    <a href="#contact" class="btn">Get in Touch</a>
-  </section>
+    <label>Select Platform:</label>
+    <select id="platformSelect">
+      <option value="whatsapp">WhatsApp</option>
+      <option value="linkedin">LinkedIn</option>
+      <option value="email">Email</option>
+      <option value="fiverr">Fiverr</option>
+      <option value="upwork">Upwork</option>
+    </select>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>Responsive websites using modern technologies (HTML, CSS, JS).</p>
-      </div>
-      <div class="card">
-        <h3>Graphic Design</h3>
-        <p>Logos, Posters, Business Cards, Social Media Branding.</p>
-      </div>
-      <div class="card">
-        <h3>AI Tools</h3>
+    <button onclick="generateMessage()">Generate Message</button>
+
+    <textarea id="output" rows="6" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html        <h3>AI Tools</h3>
         <p>Automation, Chatbots, and AI-based solutions for your business.</p>
       </div>
     </div>
